@@ -1,0 +1,83 @@
+<div style="width:140px;min-height : 140px;" class="cmd #history# tooltips cmd-widget conso#id#" data-type="info" data-subtype="numeric" data-cmd_id="#id#" title="#collectDate#">
+  <span class='cmdName' style="font-weight: bold;font-size : 12px;">#name#</span>
+	<div class= "conso_position#id#">
+		<img src="plugins/widget/core/template/dashboard/cmd.info.numeric.HRT4-ZW/SRT323.png" class="IMGmeter#id#" alt="Meter" >
+    	<span class="stateint_conso#id#">#state#</span> 
+    	<span class="unite_conso#id#" id="unite#id#">#unite#</span>
+	</div>
+	<div id="gauge#id#" class=" indicator"></div>
+
+<style>
+@font-face {
+    font-family: "Digital-7";
+  	src:	url("plugins/widget/core/template/dashboard/cmd.info.numeric.HRT4-ZW/font/digital-7.eot?") format("eot"),
+      		url("plugins/widget/core/template/dashboard/cmd.info.numeric.HRT4-ZW/font/digital-7.woff") format("woff"),
+      		url("plugins/widget/core/template/dashboard/cmd.info.numeric.HRT4-ZW/font/digital-7.ttf") format("truetype"),
+      		url("plugins/widget/core/template/dashboard/cmd.info.numeric.HRT4-ZW/font/digital-7.svg#Digital-7") format("svg");
+  	font-weight:normal;
+  	font-style:normal;
+}
+ 
+span.stateint_conso#id# {
+    font-family: "Digital-7"; 
+    font-size:25px;
+    font-weight: bold;
+  	letter-spacing: 1px;
+  	color: Black;
+  	position: absolute;
+  	top: 18px;
+  	right: 74px;
+  	transform : scale(0.7,1);
+	-webkit-transform:scale(0.7,1); /* Safari and Chrome */
+	-moz-transform:scale(0.7,1); /* Firefox */
+    -ms-transform:scale(0.7,1); /* IE 9+ */
+	-o-transform:scale(0.7,1); /* Opera */
+  }
+
+span.unite_conso#id# {
+    font-size:12px;
+  	font-weight: bold;
+  	color: #000;
+  	position: absolute;
+  	top: 24px;
+  	right: 65px;
+  }
+
+img.IMGmeter#id# {
+  	width: 120px;
+  	height: 120px;
+}
+  
+div.conso#id# {
+  	width:140px;
+  	min-height : 140px;
+}
+  
+div.conso_position#id# {
+  	float: center; 
+  	position: absolute;
+  	left: 10px;
+  	top: 20px;
+}
+
+</style>
+      
+<script>
+	var valeur=#state#;
+ 
+  	if ('#petit#' == 1) {
+    	$('div.conso#id#').css('width','90px');
+      	$('div.conso#id#').css('min-height','80px');
+      	$('div.conso_position#id#').css('left','5px');
+      	$('span.stateint_conso#id#').css('font-size','20px');
+      	$('span.stateint_conso#id#').css('top','11px');
+      	$('span.stateint_conso#id#').css('right','42px');
+      	$('span.unite_conso#id#').css('font-size','8px');
+      	$('span.unite_conso#id#').css('top','22px');
+      	$('span.unite_conso#id#').css('right','35px');
+      	$('img.IMGmeter#id#').css('width','80px');
+      	$('img.IMGmeter#id#').css('height','80px');
+    }
+  
+</script>
+</div>
